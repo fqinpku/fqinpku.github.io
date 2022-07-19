@@ -3,6 +3,10 @@
 ## Docs: https://jekyllrb.com/docs/configuration/
 # ---------------------------------------------------------------
 
+#scheme: Muse
+#scheme: Mist
+scheme: Pisces
+
 # Site
 title: Fqin
 subtitle:
