@@ -3,22 +3,148 @@
 ## Docs: https://jekyllrb.com/docs/configuration/
 # ---------------------------------------------------------------
 
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
 #scheme: Muse
 #scheme: Mist
 scheme: Pisces
 
-# Site
-title: Fqin
-subtitle:
-description: Bookmark this to keep an eye on my project updates!
-author: 
-# Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
+# ---------------------------------------------------------------
+# Language Settings
+# ---------------------------------------------------------------
+# Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans (简体中文), zh-hk, zh-tw
 language: en
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
+menu:
+  home: / 
+  categories: /categories/ 
+  archives: /archives/     #归档
+  tags: /tags/
+  #about: /about/
+  #sitemap: /sitemap.xml
+  #commonweal: /404.html
+
+# Enable/Disable menu icons.
+  # Icon Mapping:
+  #   Map a menu item to a specific FontAwesome icon name.
+  #   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
+  #   When an question mask icon presenting up means that the item has no mapping icon.
+menu_icons:
+  enable: true
+  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
+  home: home
+  about: user
+  categories: th
+  schedule: calendar
+  tags: tags
+  archives: archive
+  sitemap: sitemap
+  commonweal: heartbeat
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+# sidebar position
+sidebar:
+  # Sidebar Position, available value: left | right
+  #position: left
+  position: right
+
+# Sidebar Display, available value:
+  #  - post    expand on posts automatically. Default.
+  #  - always  expand for all pages automatically
+  #  - hide    expand only when click on the sidebar toggle icon.
+  #  - remove  Totally remove sidebar including sidebar toggle.
+  display: post
+  #display: always
+  #display: hide
+  #display: remove
+
+# Sidebar Avatar 设置头像
+  # in directory: /assets/images/avatar.gif
+  avatar: /assets/images/fqin.jpeg
+
+# Site 
+title: Fqin
+subtitle: Fan Qin
+description: 心中有党，成绩理想
+author: 
 date_format: '%Y-%m-%d'
+
+
+
+# Social Links
+# Key is the link label showing to end users.
+# Value is the target link (E.g. GitHub: https://github.com/iissnan)
+#social:
+  #LinkLabel: Link
+
+
+# Social Links Icons
+# Icon Mapping:
+#   Map a menu item to a specific FontAwesome icon name.
+#   Key is the name of the item and value is the name of FontAwesome icon. Key is case-senstive.
+#   When an globe mask icon presenting up means that the item has no mapping icon.
+social_icons:
+  enable: true
+  # Icon Mappings.
+  # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
+  CV: https://1097233374.wixsite.com/fqin 
+  GitHub: https://github.com/fqinpku
+  Twitter: https://twitter.com/ziyue_qin
+
+
+
+
+
+# Table Of Contents in the Sidebar
+toc:
+  enable: true
+
+  # Automatically add list number to toc.
+  number: true
+
+  # If true, all words will placed on next lines if header width longer then sidebar width.
+  wrap: false
+
+
+# Creative Commons 4.0 International License.
+# http://creativecommons.org/
+# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+#creative_commons: by-nc-sa
+#creative_commons:
+
+  # Sidebar offset from top menubar in pixels.
+  offset: 12
+  offset_float: 0
+
+  # Back to top in sidebar
+  b2t: false
+
+  # Scroll percent label in b2t button
+  scrollpercent: false
+
+
+# Blog rolls
+#links_title: Links
+#links_layout: block
+#links_layout: inline
+#links:
+  #Title: http://example.com/
+
+
+
+
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url:
+url:  
 baseurl:
 permalink: pretty
 
@@ -91,7 +217,7 @@ keywords: "Jekyll, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2022
 
 # icon between year and author @Footer
 authoricon: heart
@@ -115,49 +241,9 @@ seo: false
 # subtitle: Subtitle
 index_with_subtitle: false
 
-# ---------------------------------------------------------------
-# Menu Settings
-# ---------------------------------------------------------------
-
-# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
-menu:
-  home: /
-  #categories: /categories/
-  #about: /about/
-  archives: /archives/
-  tags: /tags/
-  #sitemap: /sitemap.xml
-  #commonweal: /404.html
-
-
-# Enable/Disable menu icons.
-# Icon Mapping:
-#   Map a menu item to a specific FontAwesome icon name.
-#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
-#   When an question mask icon presenting up means that the item has no mapping icon.
-menu_icons:
-  enable: true
-  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
-  home: home
-  about: user
-  categories: th
-  schedule: calendar
-  tags: tags
-  archives: archive
-  sitemap: sitemap
-  commonweal: heartbeat
 
 
 
-
-# ---------------------------------------------------------------
-# Scheme Settings
-# ---------------------------------------------------------------
-
-# Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -207,89 +293,6 @@ font:
     size:
 
 
-
-
-# ---------------------------------------------------------------
-# Sidebar Settings
-# ---------------------------------------------------------------
-
-
-# Social Links
-# Key is the link label showing to end users.
-# Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
-
-
-# Social Links Icons
-# Icon Mapping:
-#   Map a menu item to a specific FontAwesome icon name.
-#   Key is the name of the item and value is the name of FontAwesome icon. Key is case-senstive.
-#   When an globe mask icon presenting up means that the item has no mapping icon.
-social_icons:
-  enable: true
-  # Icon Mappings.
-  # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
-  Twitter: twitter
-  Weibo: weibo
-
-
-# Sidebar Avatar
-# in directory: /assets/images/avatar.gif
-#avatar:
-
-
-# Table Of Contents in the Sidebar
-toc:
-  enable: true
-
-  # Automatically add list number to toc.
-  number: true
-
-  # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
-
-
-# Creative Commons 4.0 International License.
-# http://creativecommons.org/
-# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
-#creative_commons:
-
-
-sidebar:
-  # Sidebar Position, available value: left | right
-  position: left
-  #position: right
-
-  # Sidebar Display, available value:
-  #  - post    expand on posts automatically. Default.
-  #  - always  expand for all pages automatically
-  #  - hide    expand only when click on the sidebar toggle icon.
-  #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
-  #display: hide
-  #display: remove
-
-  # Sidebar offset from top menubar in pixels.
-  offset: 12
-  offset_float: 0
-
-  # Back to top in sidebar
-  b2t: false
-
-  # Scroll percent label in b2t button
-  scrollpercent: false
-
-
-# Blog rolls
-#links_title: Links
-#links_layout: block
-#links_layout: inline
-#links:
-  #Title: http://example.com/
 
 
 # ---------------------------------------------------------------
@@ -381,6 +384,12 @@ han: false
 
 # Duoshuo ShortName
 #duoshuo_shortname:
+
+# Comment support
+duoshuo:
+  enable:true
+  shortname: your-duoshuo-shortname
+  # disqus_shortname: your-disqus-shortname
 
 # Disqus
 disqus:
