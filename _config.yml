@@ -4,12 +4,12 @@
 # ---------------------------------------------------------------
 
 # Site
-title: fqin
+title: NexT
 subtitle:
-description: It's impossible to do nothing.
-author: Fan Qin
+description:
+author: John Doe
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: zh-Hans
+language: en
 date_format: '%Y-%m-%d'
 
 # URL
@@ -39,11 +39,9 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 
 # Code Highlighter
 ## 'pygments' is unsupported on GitHub Pages now.
-# Available value: normal | night | night eighties | night blue | night bright
-# https://github.com/chriskempson/tomorrow-theme
-highlighter: night
-#highlight:
-#  line_number: true
+highlighter: rouge
+highlight:
+  line_number: true
 
 #### Markdown Processors
 ## 'redcarpet' is unsupported on GitHub Pages now.
@@ -81,7 +79,7 @@ plugins:
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "fqin, NexT"
+keywords: "Jekyll, NexT"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -89,7 +87,7 @@ keywords: "fqin, NexT"
 rss:
 
 # Specify the date when the site was setup
-since: 2022
+#since: 2015
 
 # icon between year and author @Footer
 authoricon: heart
@@ -153,9 +151,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
+scheme: Muse
 #scheme: Mist
-scheme: Pisces
+#scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -169,20 +167,20 @@ scheme: Pisces
 font:
   enable: true
 
-  # Uri of fonts host. E.g. //fonts.googleapis.com (Default) //外链字体库地址
+  # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
   host:
 
   # Global font settings used on <body> element.
   global:
     # external: true will load this font family from host.
     external: true
-    family: Monda # Lato
+    family: Lato
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
   headings:
     external: true
-    family: Roboto Slab
+    family:
 
   # Font settings for posts
   # Fallback to `global` font settings.
@@ -195,13 +193,15 @@ font:
   # The `size` option use `px` as unit
   logo:
     external: true
-    family: Lobster Two
-    size: 24
+    family:
+    size:
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: PT Mono
+    family:
+    size:
+
 
 
 
@@ -213,10 +213,8 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-social:
-  CV: https://1097233374.wixsite.com/fqin 
-  GitHub: https://github.com/fqinpku
-  Twitter: https://twitter.com/ziyue_qin
+#social:
+  #LinkLabel: Link
 
 
 # Social Links Icons
@@ -230,12 +228,12 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-
+  Weibo: weibo
 
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-avatar: /assets/images/fqin.jpeg
+#avatar:
 
 
 # Table Of Contents in the Sidebar
@@ -258,8 +256,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  #position: left
-  position: right
+  position: left
+  #position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -355,9 +353,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlighter: night
-highlight:
-  line_number: true
+highlight_theme: normal
 
 
 # ---------------------------------------------------------------
