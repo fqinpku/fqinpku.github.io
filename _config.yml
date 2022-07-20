@@ -214,7 +214,6 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  CV: https://1097233374.wixsite.com/fqin 
   GitHub: https://github.com/fqinpku
   Twitter: https://twitter.com/ziyue_qin
 
