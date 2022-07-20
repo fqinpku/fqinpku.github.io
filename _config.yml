@@ -4,79 +4,98 @@
 # ---------------------------------------------------------------
 
 # ---------------------------------------------------------------
-# Scheme Settings
+# Basic Settings
 # ---------------------------------------------------------------
+# Scheme
 #scheme: Muse
 #scheme: Mist
 scheme: Pisces
 
-# ---------------------------------------------------------------
-# Language Settings
-# ---------------------------------------------------------------
+# Language
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans (简体中文), zh-hk, zh-tw
-language: en
+language: zh-Hans
 
-# ---------------------------------------------------------------
-# Menu Settings
-# ---------------------------------------------------------------
+# Menu
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
-  home: / 
-  categories: /categories/ 
-  archives: /archives/     #归档
-  tags: /tags/
-  #about: /about/
-  #sitemap: /sitemap.xml
+ home: / 
+ categories: /categories/ #杂记随笔 学习笔记 资源工具
+ archives: /archives/     #按时间归档
+ # tags: /tags/
+ about: /about/
+ #sitemap: /sitemap.xml
   #commonweal: /404.html
-
 # Enable/Disable menu icons.
-  # Icon Mapping:
-  #   Map a menu item to a specific FontAwesome icon name.
-  #   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
-  #   When an question mask icon presenting up means that the item has no mapping icon.
+ # Icon Mapping:
+ #   Map a menu item to a specific FontAwesome icon name.
+ #   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
+ #   When an question mask icon presenting up means that the item has no mapping icon.
 menu_icons:
-  enable: true
-  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
-  home: home
-  about: user
-  categories: th
-  schedule: calendar
-  tags: tags
-  archives: archive
-  sitemap: sitemap
-  commonweal: heartbeat
+ enable: true
+ #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
+ home: home
+ about: user
+ categories: th
+ schedule: calendar
+ tags: tags
+ archives: archive
+ sitemap: sitemap
+ commonweal: heartbeat
 
-# ---------------------------------------------------------------
-# Sidebar Settings
-# ---------------------------------------------------------------
-# sidebar position
-sidebar:
+# Sidebar
+ # sidebar position
+  sidebar:
   # Sidebar Position, available value: left | right
   #position: left
   position: right
-
-# Sidebar Display, available value:
+ # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+ display: post
   #display: always
   #display: hide
   #display: remove
-
-# Sidebar Avatar 设置头像
+ # Sidebar Avatar 设置头像
   # in directory: /assets/images/avatar.gif
   avatar: /assets/images/fqin.jpeg
+ # Site 
+  title: Fqin
+  subtitle: 
+  description: It's impossible to do nothing.
+  author: fqin #昵称
+  date_format: '%Y-%m-%d'
 
-# Site 
-title: Fqin
-subtitle: Fan Qin
-description: 心中有党，成绩理想
-author: 
-date_format: '%Y-%m-%d'
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+# RSS
+ # Set rss to false to disable feed link.
+ # Leave rss as empty to use site's feed link.
+ # Set rss to specific value if you have burned your feed already.
+ rss:
 
+# Tags
+#---
+#title: Tags
+#layout: page
+#type: tags
+#comments: true
+#tags:
+#  - Econometrics
+#  - Micro
+#---
 
+# Categories
+---
+title: Categories
+layout: page
+type: categories
+comments: true
+---
+
+# ---------------------------------------------------------------
 
 # Social Links
 # Key is the link label showing to end users.
@@ -211,10 +230,6 @@ favicon: /assets/favicon.ico
 # Set default keywords (Use a comma to separate)
 keywords: "Jekyll, NexT"
 
-# Set rss to false to disable feed link.
-# Leave rss as empty to use site's feed link.
-# Set rss to specific value if you have burned your feed already.
-rss:
 
 # Specify the date when the site was setup
 since: 2022
@@ -366,7 +381,6 @@ highlight_theme: normal
 # ---------------------------------------------------------------
 # Third Party Services Settings
 # ---------------------------------------------------------------
-
 # MathJax Support
 mathjax:
   enable: false
