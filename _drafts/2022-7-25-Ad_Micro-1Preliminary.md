@@ -15,7 +15,7 @@ categories:
 
 > Other References
 - Lecture Notes of Microeconomic Theory by Guoqiang Tian (田国强).
-- Microeconomic Foundations I: Choice and COmpetitive Markets, Kreps
+- Microeconomic Foundations I: Choice and Competitive Markets, Kreps
 
 > [练习题-在线阅读](http://www.apabi.com/pku/pub.mvc?pid=book.detail&metaid=m.20120927-ZDLW-889-0032&cult=CN&username=%E6%9D%A5%E8%87%AA%20%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%9B%BE%E4%B9%A6%E9%A6%86%20%E7%9A%84%E7%94%A8%E6%88%B7&ug=%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%9B%BE%E4%B9%A6%E9%A6%86%E6%97%A0%E5%AF%86%E7%A0%81%E7%94%A8%E6%88%B7%E7%BB%84)
 
@@ -25,13 +25,12 @@ categories:
 ## 1.1 Microeconomics Introduction 
 - 研究对象：稀缺资源的优化配置
     - 稀缺：st.约束条件 $g(x)\geq 0$
-        - (不)等式约束: (Kuhn-Tucker) Lagrangian Function
     - 优化：efficiency = no waste = Pareto Optimal
+    NB Pareto Efficient: 一组价格st UMP+PMP
     - 配置：手段 = 市场/P+计划
 - 研究方法：比较静态分析
-    - 求偏导 $\frac{\partial y}{\partial x} $
-    - Hessian Matrix [习题课]()
-    - 变量分类(内生-外生)-全微分-系数矩阵-Cramer Law [高然-高宏方法-笔记](https://www.jianguoyun.com/p/DY6VBtEQ-PnjChj4lM0EIAA)
+    - 直观方法：UMP中求出$x(p,w)$，再$\frac{\partial{x}}{\partial{p}}$ 
+    - 比较静态分析方法：无约束问题-Hessian matrix - Crammar法则；等式约束问题 - 加边Hessian Matrix - Crammar法则
 - 研究框架：General Equilibrium
     - 1776, Adam Smith, "invisible hand" - 市场实现最优配置 - 1st Fundamental Theorem of Welfare Economics
     - 1874, Walras Law: n个市场只需n-1个(相对)价格
